@@ -24,15 +24,25 @@ class Room {
     this.world.camera.lookAt(new THREE.Vector3(0, 0, -0.4));
   }
   async #loadSounds() {
-    const chipSoundPath = `./src/assets/sounds/chipSound.mp3`;
+    // const chipSoundPath = `./src/assets/sounds/chipSound.mp3`;
+    // await this.audioManager.load(chipSoundPath, "chip", false, 0.5);
+    // const drawSoundPath = `./src/assets/sounds/drawSound.mp3`;
+    // await this.audioManager.load(drawSoundPath, "draw", false, 0.7);
+    // const flipSoundPath = `./src/assets/sounds/flipSound.mp3`;
+    // await this.audioManager.load(flipSoundPath, "flip", false, 0.7);
+    // const shuffleSoundPath = `./src/assets/sounds/shuffleSound.mp3`;
+    // await this.audioManager.load(shuffleSoundPath, "shuffle", false, 0.5);
+    // const slideSoundPath = `./src/assets/sounds/slideSound.mp3`;
+    // await this.audioManager.load(slideSoundPath, "slide", false, 0.7);
+    const chipSoundPath = `./static/sounds/chipSound.mp3`;
     await this.audioManager.load(chipSoundPath, "chip", false, 0.5);
-    const drawSoundPath = `./src/assets/sounds/drawSound.mp3`;
+    const drawSoundPath = `./static/sounds/drawSound.mp3`;
     await this.audioManager.load(drawSoundPath, "draw", false, 0.7);
-    const flipSoundPath = `./src/assets/sounds/flipSound.mp3`;
+    const flipSoundPath = `./static/sounds/flipSound.mp3`;
     await this.audioManager.load(flipSoundPath, "flip", false, 0.7);
-    const shuffleSoundPath = `./src/assets/sounds/shuffleSound.mp3`;
+    const shuffleSoundPath = `./static/sounds/shuffleSound.mp3`;
     await this.audioManager.load(shuffleSoundPath, "shuffle", false, 0.5);
-    const slideSoundPath = `./src/assets/sounds/slideSound.mp3`;
+    const slideSoundPath = `./static/sounds/slideSound.mp3`;
     await this.audioManager.load(slideSoundPath, "slide", false, 0.7);
   }
   async #createButtons() {

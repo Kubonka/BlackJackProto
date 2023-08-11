@@ -646,11 +646,26 @@ class GameManager {
       console.error("Error cargando asset", error);
     }
   }
+  // async #loadAsset(name) {
+  //   const gltfLoader = new GLTFLoader();
+  //   return new Promise((resolve, reject) => {
+  //     gltfLoader.load(
+  //       `./src/assets/gltf/${name}.gltf`,
+  //       (gltf) => {
+  //         const mesh = gltf.scene.children[0];
+  //         mesh.name = name;
+  //         resolve(mesh);
+  //       },
+  //       undefined,
+  //       reject
+  //     );
+  //   });
+  // }
   async #loadAsset(name) {
     const gltfLoader = new GLTFLoader();
     return new Promise((resolve, reject) => {
       gltfLoader.load(
-        `./src/assets/gltf/${name}.gltf`,
+        `./static/gltf/${name}.gltf`,
         (gltf) => {
           const mesh = gltf.scene.children[0];
           mesh.name = name;
