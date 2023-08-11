@@ -642,6 +642,7 @@ class GameManager {
       });
 
       this.world.assets = assets;
+      console.log(this.world.assets);
     } catch (error) {
       console.error("Error cargando asset", error);
     }
